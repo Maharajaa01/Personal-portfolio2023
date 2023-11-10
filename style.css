@@ -517,9 +517,10 @@ nav .fa-solid{
         margin-left: 0 !important;
         margin-top: 10px; /* Add margin to separate text from the image */
     }
+    
 
     .cardImage_odd img {
-        width: 100%;
+        width: 80%;
         border-radius: 10px;
     }
 

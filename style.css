@@ -25,7 +25,7 @@ body{
 #header{
         width: 100%;
         height: 100vh;
-       
+        background-image: url(./images/new-project1.png);
         background-size: cover;
         background-position: right;
     
@@ -104,13 +104,7 @@ nav ul li a:hover::after{
     padding: 80px 0;
     color: #ababab;
 }
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(./images/new-project1.png);
-    background-size: cover;
-    background-position: center;
-}
+
 .row{
     display: flex;
     justify-content: space-between;
@@ -288,69 +282,6 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
-/*----------------------------contact-------------------*/
-.contact-left{
-    flex-basis: 35%;
-}
-.contact-right{
-    flex-basis: 60%;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.contact-left p i{
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 25px;
-}
-.social-icons{
-    margin-top: 30px;
-}
-.social-icons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-
-}
-.social-icons a:hover{
-    color: #ff004f;
-    transform: translateY(-5px);
-}
-.btn.btn2{
-    display: inline-block;
-    color: white;
-    background: #ff004f;
-}
-.contact-right form{
-    width: 100%;
-}
-form input,form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.copywrite{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
-}
 /*------------my projects css-----------*/
 .container{
     max-width: 1152px;
@@ -358,12 +289,6 @@ form .btn2{
     margin:0 auto;
 
 }
-
-header nav .left a:hover{
-    color:var(--primary);
-    
-}
-
 
 .btn{
     padding:0.8rem 2rem;
@@ -437,59 +362,75 @@ header nav .left a:hover{
      padding: 10px;
      margin: 10px;
  }
-section.services{
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-    background: var(--light);
-}
-section.services .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 2rem;
-    grid-row-gap: 6rem;
-}
-
-section.services .card-wrapper .card{
-    background: var(--pure);
-    padding:3rem 2rem ;
-    position: relative;
-    padding-top: 5rem;
-    text-align: center;
-    transition: all .3s ease;
-}
-
-section.services .card-wrapper .card:hover{
-    background: var(--dark);
-}
-
-section.services .card-wrapper .card img{
-    position: absolute;
-    top:-3.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-section.services .card-wrapper .card h2{
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-section.services .card-wrapper .card:hover h2 ,section.services .card-wrapper .card:hover h2{
-    color: var(--pure);
-}
-
-
-section.services .card-wrapper .card p{
-    font-family: 'Lato',sans-serif;
-    color: var(--ternary);
-    line-height:1.6;
-}
 
 section.work{
     padding-top: 4rem;
     padding-bottom: 3rem;
     background: var(--dark);
+}
+
+/*----------------------------contact-------------------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    color: white;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copywrite{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
 }
 
 
@@ -499,14 +440,15 @@ nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width:600px){
+   
     #header{
         background-image: url(images/imresizer-1699201232920.jpg);
     }
     .header-text{
-        margin-top: 85%;
+        margin-top: 70%;
         font-size: 30px;
         font-weight: bold;
-        color: rgb(255, 7, 7);
+        color: rgb(187, 134, 9);
     }
     .header-text h1{
         font-size: 30px;
@@ -546,7 +488,7 @@ nav .fa-solid{
         flex-basis: 100%;
     }
     .about-col-1{
-        margin-top: 30px;
+        margin-top: 0px;
     }
     .about-col-2{
         font-size: 14px;
@@ -561,10 +503,34 @@ nav .fa-solid{
     .copywrite{
         font-size: 14px;
     }
+    .card-wrapper-projects {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 5rem;
+    }
+
+    .projects_card_odd {
+        flex-direction: column; /* Change the direction to column for smaller screens */
+    }
+
+    .cardTexts_odd {
+        margin-left: 0 !important;
+        margin-top: 10px; /* Add margin to separate text from the image */
+    }
+
+    .cardImage_odd img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .section-heading-white + p {
+        margin-bottom: 2rem;
+    }
+}
 
     
   
-}
+
 #msg{
     color: #61b752;
     margin-top: -10px;
